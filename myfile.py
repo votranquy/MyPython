@@ -96,3 +96,77 @@ print(a[0:2]) #Get from 0 to 1 (2-1)
 a="    Hello   you   "
 print(a)
 print(a.strip()) #No have space at begining and ending
+a = "Hello World"
+print(len(a))
+a = "Hello World"
+print(a.upper())
+a = "Hellow WOrld"
+print(a.replace("H","J"))
+a = "hello, world"
+print(a.split(","))
+
+
+#Command-line String Input
+# x = 1
+# print("Enter your name:")
+# x = input()
+# print("Hello, " + x)
+
+x= 2
+y= 3
+print(x**y)
+x=5
+print(x)
+x+=5
+print(x)
+x-=5
+print(x)
+x*=5
+print(x)
+x/=5
+print(x)
+x%=3
+print(x)
+x//=1
+print(x)
+x**=3
+x-=1
+print(x)
+x&=3
+print(x)
+x|=4
+print(x)
+x^=3
+print(x)
+x>>=1
+print(x)
+x<<=2
+print(x)
+
+x = 5
+
+print(x > 3 and x < 10)
+
+x = ["apple", "banana"]
+
+print("pineapple" not in x)
+
+x = ["apple", "banana"]
+
+print("banana" in x)
+
+x= 5
+print(x>3 or x<4)
+
+x=5
+print(not(x>3 and x<10))
+
+thislist = ["apple","banana","Cherry"]
+print(thislist)
+print(thislist[1])
+thislist[1]="orange"
+print(thislist)
+
+
+for x in thislist:
+    print(x)
