@@ -301,3 +301,4 @@ print(thisset)
 
 thisset = set(("apple","banana","cherry"))
 print(thisset)
+#https://www.w3schools.com/python/python_sets.asp
