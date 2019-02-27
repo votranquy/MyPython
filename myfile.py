@@ -170,3 +170,134 @@ print(thislist)
 
 for x in thislist:
     print(x)
+
+thislist = ["apple","banana","cherry"]
+if "apple" in thislist:
+    print("Yes, apple is in this list")
+if "mango" not in thislist:
+    print("Mango is not in thislist")
+
+thislist = ["apple","banana","cherry"]
+print("Do dai cua thislist la:") 
+print(len(thislist))    
+
+thislist = ["apple","banana","cherry"]
+thislist.append('orange')
+print(thislist)   
+
+thislist = ["apple","banana","cherry"]
+thislist.insert(1,"orange")
+print(thislist)  
+
+thislist = ["apple","banana","cherry"]
+thislist.remove("banana")
+print(thislist)  
+
+thislist = ["apple","banana","cherry"]
+thislist.pop()
+print(thislist)
+
+thislist = ["apple","banana","cherry"]
+del thislist[0]
+del thislist[0]
+print(thislist)
+
+thislist = ["apple","banana","cherry"]
+del thislist
+
+# thislist = ["apple","banana","cherry"]
+# thislist.clear()
+# thislist.append("SamSung")
+# print(thislist)
+
+thislist =list(("apple","banana","cherry"))
+print(thislist) 
+
+
+thistuple = ("Car", "House", "Love")
+print(thistuple)
+
+thistuple = ("Car", "House", "Love")
+print(thistuple[1])
+
+# thistuple = ("Car", "House", "Love")
+# thistuple[1] = "Land"
+# print(thistuple)
+# thistuple = ("apple", "banana", "cherry")
+# thistuple[1] = "blackcurrant"
+# # The values will remain the same:
+# print(thistuple)
+thistuple = ("Car", "House", "Love")
+for x in thistuple:
+    print(x)
+
+thisproperty = ("Car","Hourse","Love")
+for x in thisproperty:
+    print(x)
+
+thisproperty = ("Car","Hourse","Love")
+# thisproperty[1] = "Money"
+print(thisproperty)
+
+thistuple=("apple","Samsung","nokia")
+if "apple" in thistuple:
+    print("Yes, 'apple' is in this list")
+
+thistuple = ('apple','samsung','nokia')
+print(len(thistuple))
+#Can not add items to tuple
+#Can not remove items in a tuple
+# Use del to delete all tuple
+
+thistuple = tuple(("apple", "samsung","nokia"))
+print(thistuple)
+print(thistuple.count("apple"))
+print(thistuple.index("nokia"))
+
+thisset={"apple","banana","cherry"}
+for x in thisset:
+    print(x)
+
+thisset = {'apple','banana', 'cherry'}
+print("banana" in thisset)
+
+#Can not change the ites in set
+#But Can add new items
+
+thisset = {'apple',"banana",'cherry'}
+thisset.add("orange")
+print(thisset)
+
+thisset ={'apple','banana','cherry'}
+thisset.update(['startfruit','dragonfruit','orange'])
+print(thisset)
+
+thisset = {'apple','mango'}
+print(len(thisset))
+
+thisset = {'apple','mango'}
+thisset.remove('mango')
+print(thisset)
+thisset.discard("apple")
+print(thisset)
+
+thisset = {'apple','banana','cherry'}
+x = thisset.pop()
+print(x)
+print(thisset)
+
+thisset = {'apple','banana','cherry'}
+x = thisset.pop()
+print(x)
+print(thisset)
+
+thisset ={'apple',"mango"}
+thisset.clear()
+print(thisset)
+
+# thisset = {"apple","mango"}
+# del thisset
+# print(thisset)
+
+thisset = set(("apple","banana","cherry"))
+print(thisset)
