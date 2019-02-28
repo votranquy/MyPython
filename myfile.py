@@ -132,15 +132,15 @@ print(x)
 x**=3
 x-=1
 print(x)
-x&=3
+# x&=3
 print(x)
-x|=4
+# x|=4
 print(x)
-x^=3
+# x^=3
 print(x)
-x>>=1
+# x>>=1
 print(x)
-x<<=2
+# x<<=2
 print(x)
 
 x = 5
@@ -302,3 +302,96 @@ print(thisset)
 thisset = set(("apple","banana","cherry"))
 print(thisset)
 #https://www.w3schools.com/python/python_sets.asp
+
+
+#Python dictionaries
+thisdict ={
+    "brand":"Ford",
+    "model":"Mustag",
+    "year":1976
+}
+print(thisdict)
+x=thisdict["model"]
+print(x)
+x=thisdict.get("model")
+print(x)
+thisdict["year"]=2019
+print(thisdict)
+for x in thisdict:
+    print(x)
+for x in thisdict:
+    print(thisdict[x])
+for x in thisdict.values():
+    print(x)
+for x,y in thisdict.items():
+    print(x,y)
+for x,y in thisdict.items():
+    print(x,y)
+if "model" in thisdict:
+    print("yes, 'model' is one keys of thislist")
+print(len(thislist))
+#Add to dic
+thisdict['color'] ="red"
+print(thisdict)
+#Remove dic
+thisdict.pop("color")
+print(thisdict)
+#Remove the last
+thisdict.popitem()
+print(thisdict)
+#Del keyword
+del thisdict["brand"]
+print(thisdict)
+#Del can not use if the dic have only one element
+
+#Empty the dic
+thisdict.clear()
+print(thisdict)
+#Constructor dic
+thisdict = dict(brand="Ford",model="Mustag")
+print(thisdict)
+
+
+
+#PYthon If Else
+a=33
+b=200
+if b>a :
+    print("b is great than a")
+
+# Elif  
+a=33
+b=33
+if b>a:
+    print("b is great than a")
+elif a==b:
+    print("a and b are equal")
+#Else (the final catch) not have the condition
+a =200
+b =33
+if b>a:
+    print("b > a")
+elif a==b:
+    print("a =b")
+else:
+    print("a > b")
+#One line
+if a>b: print("a is greater than b")
+
+#If Else short hand
+print("a") if a>b else print("b")
+
+a=330
+b=330
+print("A") if a>b else print("=") if a==b else print("B")
+
+a=200
+b=33
+c=550
+if a>b and c>a:
+    print("Both conditions are True")
+
+if a>b or a>c:
+    print("at least one of the conditions is True")
+
+#https://www.w3schools.com/python/python_conditions.asp
