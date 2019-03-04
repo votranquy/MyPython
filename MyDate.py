@@ -1,0 +1,13 @@
+import datetime 
+x = datetime.datetime.now()
+print("The time is: ")
+print(x)
+print("This year is: ")
+print(x.year)
+print("The weekday is: ")
+print(x.strftime("%A"))
+print("The date is: ")
+x=datetime.datetime(2020,5,16)
+print(x)
+print("The month is:")
+print(x.strftime("%B"))
