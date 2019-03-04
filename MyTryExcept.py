@@ -34,4 +34,6 @@ try:
 except:
     print("Sth went wrong when writing the file")
 finally:
-    f.close()        
+    f.close()   
+
+print("+++++++++++++++++++++++++")
