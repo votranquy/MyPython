@@ -168,14 +168,14 @@
 
 
 
-# #LIST
+# #LIST []
 # thislist = ["apple","banana","Cherry"] #['apple', 'banana', 'Cherry']
 # print(thislist)
-# print(thislist[1])
+# print(thislist[1]) #banana
 # thislist[1]="orange" #Change the second item
 # print(thislist)
 # for x in thislist:
-#     print(x)
+#     print(x)     #apple  orange  Cherry
 
 # thislist = ["apple","banana","cherry"]
 # if "apple" in thislist:
@@ -183,42 +183,73 @@
 # if "mango" not in thislist:
 #     print("Mango is not in thislist")
 
+# #len() get the length of list[] 
 # thislist = ["apple","banana","cherry"]
 # print("Do dai cua thislist la:") 
-# print(len(thislist))    
+# print(len(thislist)) #3   
+# #print(thislist)#['apple', 'banana', 'cherry', 'orange']
 
+# #insert(): insert at a special position
 # thislist = ["apple","banana","cherry"]
-# thislist.append('orange')
-# print(thislist)   
+# thislist.insert(1,"orange")#the position 1 is orange
+# print(thislist) #['apple', 'orange', 'banana', 'cherry']
 
+
+# ##remove()
 # thislist = ["apple","banana","cherry"]
-# thislist.insert(1,"orange")
+# thislist.remove("banana")#['apple', 'cherry']
 # print(thislist)  
 
-# thislist = ["apple","banana","cherry"]
-# thislist.remove("banana")
-# print(thislist)  
 
+# #pop()
 # thislist = ["apple","banana","cherry"]
-# thislist.pop()
+# thislist.pop() #remove the last
+# print(thislist)
+# thislist.pop(0) #remove the position 0
 # print(thislist)
 
+# #del keyword
 # thislist = ["apple","banana","cherry"]
-# del thislist[0]
-# del thislist[0]
-# print(thislist)
-
+# del thislist[0] #thislist.pop(0)
+# print(thislist) #['banana', 'cherry']
+# del thislist[0] #thislist.pop(0)
+# print(thislist) #['cherry']
+# del thislist #Delete completely a list
+# #print(thislist) #Error. List is not define
 # thislist = ["apple","banana","cherry"]
 # del thislist
 
-# # thislist = ["apple","banana","cherry"]
-# # thislist.clear()
-# # thislist.append("SamSung")
-# # print(thislist)
+# clear() :empty a list NOT WORK
+# thislist = ["apple","banana","cherry"]
+# thislist.clear()
+# print(thislist)
+# thislist.append("SamSung")
+# print(thislist)
 
-# thislist =list(("apple","banana","cherry"))
-# print(thislist) 
 
+# #copy(): NOT WORK
+# thislist = ["apple", "banana", "cherry"]
+# mylist = thislist.copy()
+# print(mylist)
+
+# ##list(): WORK
+# thislist = ["apple", "banana", "cherry"]
+# mylist = list(thislist)
+# print(mylist)
+
+
+# list(())
+thislist =list(("apple","banana","cherry"))
+print(thislist) #['apple', 'banana', 'cherry']
+print(thislist.count("apple"))
+thislist2 = ["kakao","kiwi"]
+thislist.extend(thislist2) #connect 2 lists
+print(thislist)
+print(thislist.index("kakao"))
+thislist.reverse()  #dao nguoc
+print(thislist)
+thislist.sort()
+print(thislist) # sort by ABC
 
 # thistuple = ("Car", "House", "Love")
 # print(thistuple)
