@@ -238,25 +238,32 @@
 # print(mylist)
 
 
-# list(())
-thislist =list(("apple","banana","cherry"))
-print(thislist) #['apple', 'banana', 'cherry']
-print(thislist.count("apple"))
-thislist2 = ["kakao","kiwi"]
-thislist.extend(thislist2) #connect 2 lists
-print(thislist)
-print(thislist.index("kakao"))
-thislist.reverse()  #dao nguoc
-print(thislist)
-thislist.sort()
-print(thislist) # sort by ABC
+# # list(())
+# thislist =list(("apple","banana","cherry"))
+# print(thislist) #['apple', 'banana', 'cherry']
+# print(thislist.count("apple"))
+# thislist2 = ["kakao","kiwi"]
+# thislist.extend(thislist2) #connect 2 lists
+# print(thislist)
+# print(thislist.index("kakao"))
+# thislist.reverse()  #dao nguoc
+# print(thislist)
+# thislist.sort()
+# print(thislist) # sort by ABC
 
+
+
+# ##TUPLE
+# thistuple = ("Car", "House", "Love")
+# print(thistuple) #('Car', 'House', 'Love')
+
+# thislist = ["Car", "House", "Love"]
+# print(thislist)
 # thistuple = ("Car", "House", "Love")
 # print(thistuple)
-
-# thistuple = ("Car", "House", "Love")
 # print(thistuple[1])
 
+# ERROR when change the value of tuple
 # # thistuple = ("Car", "House", "Love")
 # # thistuple[1] = "Land"
 # # print(thistuple)
@@ -272,165 +279,113 @@ print(thislist) # sort by ABC
 # for x in thisproperty:
 #     print(x)
 
+
 # thisproperty = ("Car","Hourse","Love")
 # # thisproperty[1] = "Money"
 # print(thisproperty)
 
+
 # thistuple=("apple","Samsung","nokia")
 # if "apple" in thistuple:
 #     print("Yes, 'apple' is in this list")
+
 
 # thistuple = ('apple','samsung','nokia')
 # print(len(thistuple))
 # #Can not add items to tuple
 # #Can not remove items in a tuple
 # # Use del to delete all tuple
+# del thistuple
 
+
+
+# #tuple constructor
 # thistuple = tuple(("apple", "samsung","nokia"))
 # print(thistuple)
-# print(thistuple.count("apple"))
-# print(thistuple.index("nokia"))
+# print(thistuple.count("apple"))#1
+# print(thistuple.index("nokia"))#2
+
+
+
+
+
+# #SETS {}
+# thisset={"apple","banana","cherry"}
+# print(thisset) #set(['cherry', 'banana', 'apple'])
+
 
 # thisset={"apple","banana","cherry"}
 # for x in thisset:
 #     print(x)
 
+
 # thisset = {'apple','banana', 'cherry'}
 # print("banana" in thisset)
 
-# #Can not change the ites in set
+
+
+# #Can not change the items in set
 # #But Can add new items
+
+
 
 # thisset = {'apple',"banana",'cherry'}
 # thisset.add("orange")
-# print(thisset)
+# print(thisset) #set(['orange', 'cherry', 'banana', 'apple'])
 
+
+# # update() #add some new items
 # thisset ={'apple','banana','cherry'}
 # thisset.update(['startfruit','dragonfruit','orange'])
-# print(thisset)
+# print(thisset) #set(['startfruit', 'apple', 'cherry', 'dragonfruit', 'orange', 'banana'])
 
+
+# #len()
 # thisset = {'apple','mango'}
 # print(len(thisset))
 
+
+##remove()   discard
 # thisset = {'apple','mango'}
 # thisset.remove('mango')
-# print(thisset)
+# print(thisset) #set(['apple'])
+# thisset = {'apple','mango'}
 # thisset.discard("apple")
-# print(thisset)
+# print(thisset) #set(['mango'])
 
+
+# #pop()
 # thisset = {'apple','banana','cherry'}
 # x = thisset.pop()
-# print(x)
-# print(thisset)
+# print(x) #cherry
+# print(thisset) #set(['banana', 'apple'])
 
-# thisset = {'apple','banana','cherry'}
-# x = thisset.pop()
-# print(x)
-# print(thisset)
 
+# # clear() : empty set
 # thisset ={'apple',"mango"}
 # thisset.clear()
-# print(thisset)
+# print(thisset) #set([])
 
-# # thisset = {"apple","mango"}
-# # del thisset
-# # print(thisset)
+
+
+##completely delete a set
+# thisset = {"apple","mango"}
+# del thisset
+# print(thisset) #ERROR
+
 
 # thisset = set(("apple","banana","cherry"))
 # print(thisset)
 # #https://www.w3schools.com/python/python_sets.asp
 
 
-# #Python dictionaries
-# thisdict ={
-#     "brand":"Ford",
-#     "model":"Mustag",
-#     "year":1976
-# }
-# print(thisdict)
-# x=thisdict["model"]
-# print(x)
-# x=thisdict.get("model")
-# print(x)
-# thisdict["year"]=2019
-# print(thisdict)
-# for x in thisdict:
-#     print(x)
-# for x in thisdict:
-#     print(thisdict[x])
-# for x in thisdict.values():
-#     print(x)
-# for x,y in thisdict.items():
-#     print(x,y)
-# for x,y in thisdict.items():
-#     print(x,y)
-# if "model" in thisdict:
-#     print("yes, 'model' is one keys of thislist")
-# print(len(thislist))
-# #Add to dic
-# thisdict['color'] ="red"
-# print(thisdict)
-# #Remove dic
-# thisdict.pop("color")
-# print(thisdict)
-# #Remove the last
-# thisdict.popitem()
-# print(thisdict)
-# #Del keyword
-# del thisdict["brand"]
-# print(thisdict)
-# #Del can not use if the dic have only one element
 
-# #Empty the dic
-# thisdict.clear()
-# print(thisdict)
-# #Constructor dic
-# thisdict = dict(brand="Ford",model="Mustag")
-# print(thisdict)
+# thistuple = {"apple", "banana", "cherry"}
+# if "apple" in thistuple:
+#   print("Yes, 'apple' is in the fruits tuple")
 
 
 
-# #PYthon If Else
-# a=33
-# b=200
-# if b>a :
-#     print("b is great than a")
 
-# # Elif  
-# a=33
-# b=33
-# if b>a:
-#     print("b is great than a")
-# elif a==b:
-#     print("a and b are equal")
-# #Else (the final catch) not have the condition
-# a =200
-# b =33
-# if b>a:
-#     print("b > a")
-# elif a==b:
-#     print("a =b")
-# else:
-#     print("a > b")
-# #One line
-# if a>b: print("a is greater than b")
-
-# #If Else short hand
-# # a =200
-# # b=300
-# # print("a") if a > b else print("b")
-
-# a=330
-# b=330
-# print("A") if a>b else print("=") if a==b else print("B")
-
-# a=200
-# b=33
-# c=550
-# if a>b and c>a:
-#     print("Both conditions are True")
-
-# if a>b or a>c:
-#     print("at least one of the conditions is True")
 
 #https://www.w3schools.com/python/python_conditions.asp
